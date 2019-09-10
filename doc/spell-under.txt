@@ -21,7 +21,7 @@ Once `spell-under` is installed, Vim behaves as follows:
   plugin or from the vim command prompt, vim sets colorscheme accordingly and
   fixes up spell checker to use "UNDERLINE".
 * If `g:loaded_spell_under` is set to 1, `spell-under` plugin has been
-  loaded.`
+  loaded.
 
 # License
 
