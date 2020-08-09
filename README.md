@@ -36,13 +36,13 @@ The author of this script uses an extended installation approach based on
 
 Once `spell-under` is installed, Vim behaves as follows:
 
-* If `g:spell_under` is unset in `.vimrc`, `spell-under` executes
-  `:colorscheme murphy` and fixes up spell checker to use "UNDERLINE".
+* If `g:spell_under` is unset in `.vimrc`, `spell-under` defaults to using
+  `colorscheme` (via `g:colors_name`), or `"NONE"` if both are undefined.
 * If `.vimrc` has `let g:spell_under='<scheme>'`, `spell-under` executes
   `:colorscheme <scheme>` and fixes up spell checker to use "UNDERLINE".
 * If `.vimrc` has `let g:spell_under='NONE'`, `spell-under` doesn't executes
   `:colorscheme <scheme>`.
-* When you execute `colorscheme <scheme>` from any scipt after parsing this
+* When you execute `colorscheme <scheme>` from any script after parsing this
   plugin or from the vim command prompt, vim sets colorscheme accordingly and
   fixes up spell checker to use "UNDERLINE".
 * If `g:loaded_spell_under` is set to 1, `spell-under` plugin has been

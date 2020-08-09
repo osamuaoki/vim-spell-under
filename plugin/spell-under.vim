@@ -48,7 +48,7 @@ augroup SpellUnderline
 " Available color schemes in the baseline vim:
 "   blue darkblue default delek desert elflord evening industry koehler
 "   morning murphy pablo peachpuff ron shine slate torte zellner
-let s:spell_under =  get(g:, 'spell_under', 'murphy')
+let s:spell_under =  get(g:, 'spell_under', get(g:, 'colors_name', 'NONE'))
 if s:spell_under !=# 'NONE'
   exec 'colorscheme ' . s:spell_under
 endif
