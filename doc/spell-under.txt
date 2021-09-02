@@ -23,6 +23,16 @@ Once `spell-under` is installed, Vim behaves as follows:
 * If `g:loaded_spell_under` is set to 1, `spell-under` plugin has been
   loaded.
 
+In addition to the above, this provide '<Plug>RotateSpellSyntax' which allows
+you to rotate syntax and spell state combinations.
+
+This is currently assigned to '<leader>ss' but you can override it by defining
+mapping in advance. For example:
+
+```
+    nmap <silent> <leader>x <Plug>RotateSpellSyntax
+```
+
 # License
 
 MIT License. Copyright (c) 2019 Osamu Aoki
